@@ -1,12 +1,12 @@
 Summary:	A text-mode web browser
 Summary(pl.UTF-8):	Tekstowa przeglądarka www
 Name:		chawan
-Version:	0.3.3
+Version:	0.4.0
 Release:	1
 License:	Public Domain
 Group:		Applications/Networking
 Source0:	https://git.sr.ht/~bptato/chawan/archive/v%{version}.tar.gz
-# Source0-md5:	168a817cff5da13dc1cd03f53491d052
+# Source0-md5:	0c17c0b93da8ff0f42cbcc0d753f6598
 URL:		https://chawan.net/
 BuildRequires:	nim >= 2.0.0
 Requires:	/bin/sh
@@ -70,6 +70,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_prefix}/lib/chawan/gopher2html
 %attr(755,root,root) %{_prefix}/lib/chawan/img2html
 %attr(755,root,root) %{_prefix}/lib/chawan/md2html
+%attr(755,root,root) %{_prefix}/lib/chawan/init.jsb
 %attr(755,root,root) %{_prefix}/lib/chawan/nc
 %attr(755,root,root) %{_prefix}/lib/chawan/tohtml
 %attr(755,root,root) %{_prefix}/lib/chawan/uri2html
@@ -78,11 +79,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/cha.1*
 %{_mandir}/man1/mancha.1*
 %{_mandir}/man5/cha-config.5*
-%{_mandir}/man5/cha-localcgi.5*
 %{_mandir}/man5/cha-mailcap.5*
 %{_mandir}/man5/cha-mime.types.5*
 %{_mandir}/man5/cha-urimethodmap.5*
 %{_mandir}/man7/cha-api.7*
+%{_mandir}/man5/cha-cgi.5*
 %{_mandir}/man7/cha-css.7*
 %{_mandir}/man7/cha-image.7*
 %{_mandir}/man7/cha-protocols.7*
