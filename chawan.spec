@@ -1,12 +1,12 @@
 Summary:	A text-mode web browser
 Summary(pl.UTF-8):	Tekstowa przeglądarka www
 Name:		chawan
-Version:	0.4.3
+Version:	0.4.4
 Release:	1
 License:	Public Domain
 Group:		Applications/Networking
 Source0:	https://git.sr.ht/~bptato/chawan/archive/v%{version}.tar.gz
-# Source0-md5:	f898dd78c4499dc187d8987ceee72a7f
+# Source0-md5:	e343f61ef7f85184a26788c42614f4b7
 URL:		https://chawan.net/
 BuildRequires:	nim >= 2.0.0
 Requires:	/bin/sh
