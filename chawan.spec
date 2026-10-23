@@ -1,12 +1,12 @@
 Summary:	A text-mode web browser
 Summary(pl.UTF-8):	Tekstowa przeglądarka www
 Name:		chawan
-Version:	0.4.4
+Version:	0.5.0
 Release:	1
 License:	Public Domain
 Group:		Applications/Networking
 Source0:	https://git.sr.ht/~bptato/chawan/archive/v%{version}.tar.gz
-# Source0-md5:	e343f61ef7f85184a26788c42614f4b7
+# Source0-md5:	8fbb9aab88a3459cbc6c2558be66c66b
 URL:		https://chawan.net/
 BuildRequires:	nim >= 2.0.0
 Requires:	/bin/sh
@@ -56,6 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_prefix}/lib/chawan/cgi-bin/gemini
 %attr(755,root,root) %{_prefix}/lib/chawan/cgi-bin/gopher
 %attr(755,root,root) %{_prefix}/lib/chawan/cgi-bin/http
+%attr(755,root,root) %{_prefix}/lib/chawan/cgi-bin/https
 %attr(755,root,root) %{_prefix}/lib/chawan/cgi-bin/jebp
 %attr(755,root,root) %{_prefix}/lib/chawan/cgi-bin/man
 %attr(755,root,root) %{_prefix}/lib/chawan/cgi-bin/nanosvg
@@ -65,12 +66,12 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_prefix}/lib/chawan/cgi-bin/spartan
 %attr(755,root,root) %{_prefix}/lib/chawan/cgi-bin/ssl
 %attr(755,root,root) %{_prefix}/lib/chawan/cgi-bin/stbi
+%attr(755,root,root) %{_prefix}/lib/chawan/btoa
 %attr(755,root,root) %{_prefix}/lib/chawan/dirlist2html
 %attr(755,root,root) %{_prefix}/lib/chawan/gmi2html
 %attr(755,root,root) %{_prefix}/lib/chawan/gopher2html
 %attr(755,root,root) %{_prefix}/lib/chawan/img2html
 %attr(755,root,root) %{_prefix}/lib/chawan/md2html
-%attr(755,root,root) %{_prefix}/lib/chawan/init.jsb
 %attr(755,root,root) %{_prefix}/lib/chawan/nc
 %attr(755,root,root) %{_prefix}/lib/chawan/tohtml
 %attr(755,root,root) %{_prefix}/lib/chawan/uri2html
